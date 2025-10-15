@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyansh's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <header>
+        <h1>Divyansh Nigam</h1>
+        <p>Frontend Developer & Aspiring Software Developer</p>
+    </header>
+
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="your-image.jpg" alt="Divyansh" class="profile-pic">
+        <p>Hello! I'm Divyansh Nigam,a student at Manipal University Jaipur pursuing BTech in CSE(Data Science and Engineering)
+            ,Id say I am a passionate web developer skilled in HTML, CSS, JavaScript, and React. I enjoy building interactive and responsive websites.
+            I am a passionate and dedicated frontend developer with a growing interest in full-stack and mobile app development. I specialize in building clean, interactive, and responsive websites using HTML, CSS, JavaScript, and React, focusing on delivering smooth user experiences and visually appealing designs.
+
+            My journey in technology began with a deep curiosity about how things work on the web, which soon turned into a drive to build my own projects and continuously learn new technologies. I have successfully developed several small-scale projects that demonstrate my creativity, problem-solving mindset, and understanding of user-centric design.
+            
+            Currently, I am expanding my skill set into App Development with Kotlin and exploring Next.js to create high-performance, scalable web applications. I also enjoy working with Data Structures and Algorithms, which helps me write optimized and efficient code.
+            
+            I aspire to contribute to meaningful projects that combine design, logic, and innovation — whether it’s crafting dynamic web applications or developing user-friendly mobile apps. My ultimate goal is to become a well-rounded software developer capable of building solutions that make a positive impact.
+            
+        </p>
+    </section>
+
+   
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>C Language</li>
+            <li>React JS</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Java OOP</li>
+        </ul>
+    </section>
+
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+        <div class="project">
+            <img src="project_1.jpg" alt="Project 1">
+            <h3>Weather And Tempreture App</h3>
+            <p>Weather by City 🌦️ A simple and interactive weather web app that provides real-time weather updates for any city.
+                 Built using [your tech stack, e.g., HTML, CSS, JavaScript, API], it fetches live data such as temperature, humidity, and conditions through a weather API.
+                  <p>🔹 Features: Search weather by city name </p>
+                  <p>🔹            Check Tempreture along with weather </p>
+                  <p>🔹            It also Shows Humidity & Wind Speed </p>
+                <a href="https://divyanshnigam14.github.io/weather_web/" target="_blank" class="project-link">
+                    View on GitHub-Link
+                </a>
+            </p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Website for Companies Prtotype</h3>
+            <p>Company Website 🌐 A professional and responsive website template for businesses and organizations. Designed to showcase services, team, and contact details with a modern UI. 🔹 Features: Responsive and mobile-friendly design Sections for About, Services, Team, and Contact
+                <p>Key features include:
+
+                Responsive Design: Optimized for desktops, tablets, and mobile devices.
+                
+                Modern UI Components: Includes hero section, features/services section, testimonial cards, and a call-to-action area.
+                
+                Interactive Elements: Smooth scrolling, hover effects, and clickable buttons for engagement.
+                
+                Clean and Modular Code: Structured HTML, CSS, and JavaScript for easy maintenance and scalability.
+                
+                This prototype demonstrates the look-and-feel of the landing page before full development, allowing stakeholders to review and provide feedback on design, layout, and content flow.</p> . 
+
+                <a href="https://divyanshnigam14.github.io/Website_forCoMPANIES/" target="_blank" class="project-link">
+                    Link 
+                </a>
+            </p>
+
+
+        </div>
+        <div class="project">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>To-Do List</h3>
+            <p>A simple and responsive To-Do List website built using HTML, CSS, and JavaScript.
+                This project allows users to add, mark as complete, and delete tasks with a clean and minimal UI.
+                🚀 Features
+
+                    Add new tasks
+                    Mark tasks as completed
+                    Delete tasks
+                    Responsive design
+                    Simple and clean UI
+
+                🛠️ Technologies Used
+
+                    HTML5
+                    CSS3
+                    JavaScript (Vanilla JS)
+
+            <a href="https://divyanshnigam14.github.io/to_do_list/" target="_blank" class="project-link">
+                    Link 
+                </a>
+            </p>
+        </div>
+        </div>
+    </section>
+
+  
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download>LINK TO RESUME</a>
+    </section>
+
+    
+    <section id="contact">
+        <h2>Contact Info</h2>
+        <p>Email: divyanshnigam14@example.com</p>
+        <p>Phone: +91-7355231049</p>
+        <p>
+            Github: 
+           <a href="https://github.com/divyanshnigam14" download>LINK</a> 
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Divyansh Nigam. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        const links = document.querySelectorAll('nav a');
+        for (const link of links) {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+    </script>
+
+</body>
+</html>
